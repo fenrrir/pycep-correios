@@ -8,7 +8,6 @@ Este modulo implementa o cliente para consulta de CEP da PyCEPCorreios.
 :license: MIT, veja o arquivo LICENSE para mais detalhes.
 
 """
-import logging
 import re
 import warnings
 
@@ -16,9 +15,6 @@ import zeep
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
 
 from . import excecoes
-
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
 
 CARACTERES_NUMERICOS = re.compile(r'[^0-9]')
 
